@@ -9,51 +9,51 @@ Tech Stack <br/>
 &nbsp;&nbsp;&nbsp;5.**Maven**<br/>
 
 1.update DB properties in **src\main\resources\application.properties** according to your Database<br/>
-**Sample**<br/>
-&nbsp;&nbsp;&nbsp;server.port=8899
-&nbsp;&nbsp;&nbsp;spring.r2dbc.url=r2dbc:postgresql://localhost/postgres
-&nbsp;&nbsp;&nbsp;spring.r2dbc.username=postgres
-&nbsp;&nbsp;&nbsp;spring.r2dbc.password=admin
+&nbsp;**Sample**<br/>
+&nbsp;&nbsp;&nbsp;server.port=8899<br/>
+&nbsp;&nbsp;&nbsp;spring.r2dbc.url=r2dbc:postgresql://localhost/postgres<br/>
+&nbsp;&nbsp;&nbsp;spring.r2dbc.username=postgres<br/>
+&nbsp;&nbsp;&nbsp;spring.r2dbc.password=admin<br/>
 
-2.change Content-Type : application/json  in Header (used **POSTMAN** for testing these API Endpoints)
+2.change Content-Type : application/json  in Header (used **POSTMAN** for testing these API Endpoints)<br/>
 
 3.**End Point(s) for API**<br/>
-      1.Retrieve All Employees       	::: **http://localhost:8899/employees**             	| GET  Method  <br/>
-      2.Retrieve Specific Employee  	::: **http://localhost:8899/employees/{employeeId}**   	| GET  Method  <br/> 
-      3.Add New Employee            	::: **http://localhost:8899/employees**             	| POST Method  <br/> 
-      4.Update Employee             	::: **http://localhost:8899/employees/{employeeId}**    | PUT Method   <br/>
-      5.Delete Employee             	::: **http://localhost:8899/employees/{employeeId}**    | DELETE Method <br/>
+      &nbsp;&nbsp;1.Retrieve All Employees       	::: **http://localhost:8899/employees**             	| GET  Method  <br/>
+      &nbsp;&nbsp;2.Retrieve Specific Employee  	::: **http://localhost:8899/employees/{employeeId}**   	| GET  Method  <br/> 
+      &nbsp;&nbsp;3.Add New Employee            	::: **http://localhost:8899/employees**             	| POST Method  <br/> 
+      &nbsp;&nbsp;4.Update Employee             	::: **http://localhost:8899/employees/{employeeId}**    | PUT Method   <br/>
+      &nbsp;&nbsp;5.Delete Employee             	::: **http://localhost:8899/employees/{employeeId}**    | DELETE Method <br/>
   
   **Sample Employee Payload** <br/>
-	[<br/>
-		{<br/>
-			"id": 1,<br/>
-			"name": "PrasadVarma",<br/>
-			"designation": "SSE"<br/>
-		},<br/>
-		{<br/>
-			"id": 2,<br/>
-			"name": "Srikanth",<br/>
-			"designation": "Architech"<br/>
-		},<br/>
-		{<br/>
-			"id": 3,<br/>
-			"name": "Narasimha",<br/>
-			"designation": "Sr. QA Lead"<br/>
-		}<br/>
-	]  
+	&nbsp;&nbsp;[<br/>
+		&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;"id": 1,<br/>
+			&nbsp;&nbsp;"name": "PrasadVarma",<br/>
+			&nbsp;&nbsp;"designation": "SSE"<br/>
+		&nbsp;&nbsp;},<br/>
+		&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;"id": 2,<br/>
+			&nbsp;&nbsp;"name": "Srikanth",<br/>
+			&nbsp;&nbsp;"designation": "Architech"<br/>
+		&nbsp;&nbsp;},<br/>
+		&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;"id": 3,<br/>
+			&nbsp;&nbsp;"name": "Narasimha",<br/>
+			&nbsp;&nbsp;"designation": "Sr. QA Lead"<br/>
+		&nbsp;&nbsp;}<br/>
+	&nbsp;&nbsp;]  
   <br/>
 
 **Sample Postgres DB Scripts** <br/>
-**CREATE**
-CREATE TABLE public.employee <br/>
-(<br/>
-    id integer NOT NULL,<br/>
-    name text COLLATE pg_catalog."default",<br/>
-    designation text COLLATE pg_catalog."default",<br/>
-    CONSTRAINT employee_pkey PRIMARY KEY (id),<br/>
-),<br/>
-**INSERT**<br/>
-INSERT INTO public.employee(id, name, designation) 	VALUES (1, 'PrasadVarma', 'SSE');<br/>
-INSERT INTO public.employee(id, name, designation) 	VALUES (2, 'Srikanth', 'Solution Architect');<br/>
-INSERT INTO public.employee(id, name, designation) 	VALUES (3, 'Narasimha', 'QA Lead');<br/>
+&nbsp;**CREATE**
+&nbsp;&nbsp;CREATE TABLE public.employee <br/>
+&nbsp;&nbsp;(<br/>
+    &nbsp;&nbsp;id integer NOT NULL,<br/>
+    &nbsp;&nbsp;name text COLLATE pg_catalog."default",<br/>
+    &nbsp;&nbsp;designation text COLLATE pg_catalog."default",<br/>
+    &nbsp;&nbsp;CONSTRAINT employee_pkey PRIMARY KEY (id),<br/>
+&nbsp;&nbsp;),<br/>
+&nbsp;&nbsp;**INSERT**<br/>
+&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (1, 'PrasadVarma', 'SSE');<br/>
+&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (2, 'Srikanth', 'Solution Architect');<br/>
+&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (3, 'Narasimha', 'QA Lead');<br/>
