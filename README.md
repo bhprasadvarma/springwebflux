@@ -26,26 +26,26 @@ Tech Stack <br/>
   
   **Sample Employee Payload** <br/>
 	&nbsp;&nbsp;[<br/>
-		&nbsp;&nbsp;&nbsp;{<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"name": "PrasadVarma",<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"designation": "SSE"<br/>
-		&nbsp;&nbsp;&nbsp;},<br/>
-		&nbsp;&nbsp;&nbsp;{<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"id": 2,<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"name": "Srikanth",<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"designation": "Architech"<br/>
-		&nbsp;&nbsp;&nbsp;},<br/>
-		&nbsp;&nbsp;&nbsp;{<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"id": 3,<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"name": "Narasimha",<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;"designation": "Sr. QA Lead"<br/>
-		&nbsp;&nbsp;&nbsp;}<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "PrasadVarma",<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"designation": "SSE"<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;},<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 2,<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Srikanth",<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"designation": "Architech"<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;},<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 3,<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Narasimha",<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"designation": "Sr. QA Lead"<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 	&nbsp;&nbsp;]  
   <br/>
 
 **Sample Postgres DB Scripts** <br/>
-&nbsp;**CREATE**<b/r>
+&nbsp;**CREATE**<br/>
 &nbsp;&nbsp;&nbsp;CREATE TABLE public.employee <br/>
 &nbsp;&nbsp;&nbsp;(<br/>
    &nbsp;&nbsp;&nbsp;id integer NOT NULL,<br/>
