@@ -26,34 +26,34 @@ Tech Stack <br/>
   
   **Sample Employee Payload** <br/>
 	&nbsp;&nbsp;[<br/>
-		&nbsp;&nbsp;{<br/>
-			&nbsp;&nbsp;"id": 1,<br/>
-			&nbsp;&nbsp;"name": "PrasadVarma",<br/>
-			&nbsp;&nbsp;"designation": "SSE"<br/>
-		&nbsp;&nbsp;},<br/>
-		&nbsp;&nbsp;{<br/>
-			&nbsp;&nbsp;"id": 2,<br/>
-			&nbsp;&nbsp;"name": "Srikanth",<br/>
-			&nbsp;&nbsp;"designation": "Architech"<br/>
-		&nbsp;&nbsp;},<br/>
-		&nbsp;&nbsp;{<br/>
-			&nbsp;&nbsp;"id": 3,<br/>
-			&nbsp;&nbsp;"name": "Narasimha",<br/>
-			&nbsp;&nbsp;"designation": "Sr. QA Lead"<br/>
-		&nbsp;&nbsp;}<br/>
+		&nbsp;&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"name": "PrasadVarma",<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"designation": "SSE"<br/>
+		&nbsp;&nbsp;&nbsp;},<br/>
+		&nbsp;&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"id": 2,<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"name": "Srikanth",<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"designation": "Architech"<br/>
+		&nbsp;&nbsp;&nbsp;},<br/>
+		&nbsp;&nbsp;&nbsp;{<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"id": 3,<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"name": "Narasimha",<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;"designation": "Sr. QA Lead"<br/>
+		&nbsp;&nbsp;&nbsp;}<br/>
 	&nbsp;&nbsp;]  
   <br/>
 
 **Sample Postgres DB Scripts** <br/>
-&nbsp;**CREATE**
-&nbsp;&nbsp;CREATE TABLE public.employee <br/>
-&nbsp;&nbsp;(<br/>
-    &nbsp;&nbsp;id integer NOT NULL,<br/>
-    &nbsp;&nbsp;name text COLLATE pg_catalog."default",<br/>
-    &nbsp;&nbsp;designation text COLLATE pg_catalog."default",<br/>
-    &nbsp;&nbsp;CONSTRAINT employee_pkey PRIMARY KEY (id),<br/>
-&nbsp;&nbsp;),<br/>
+&nbsp;**CREATE**<b/r>
+&nbsp;&nbsp;&nbsp;CREATE TABLE public.employee <br/>
+&nbsp;&nbsp;&nbsp;(<br/>
+   &nbsp;&nbsp;&nbsp;id integer NOT NULL,<br/>
+   &nbsp;&nbsp;&nbsp;name text COLLATE pg_catalog."default",<br/>
+   &nbsp;&nbsp;&nbsp;designation text COLLATE pg_catalog."default",<br/>
+   &nbsp;&nbsp;&nbsp;CONSTRAINT employee_pkey PRIMARY KEY (id),<br/>
+&nbsp;&nbsp;&nbsp);<br/>
 &nbsp;&nbsp;**INSERT**<br/>
-&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (1, 'PrasadVarma', 'SSE');<br/>
-&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (2, 'Srikanth', 'Solution Architect');<br/>
-&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (3, 'Narasimha', 'QA Lead');<br/>
+&nbsp;&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (1, 'PrasadVarma', 'SSE');<br/>
+&nbsp;&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (2, 'Srikanth', 'Solution Architect');<br/>
+&nbsp;&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (3, 'Narasimha', 'QA Lead');<br/>
