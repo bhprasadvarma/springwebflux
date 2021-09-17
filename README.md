@@ -48,11 +48,11 @@ Tech Stack <br/>
 &nbsp;**CREATE**<br/>
 &nbsp;&nbsp;&nbsp;CREATE TABLE public.employee <br/>
 &nbsp;&nbsp;&nbsp;(<br/>
-   &nbsp;&nbsp;&nbsp;id integer NOT NULL,<br/>
-   &nbsp;&nbsp;&nbsp;name text COLLATE pg_catalog."default",<br/>
-   &nbsp;&nbsp;&nbsp;designation text COLLATE pg_catalog."default",<br/>
-   &nbsp;&nbsp;&nbsp;CONSTRAINT employee_pkey PRIMARY KEY (id),<br/>
-&nbsp;&nbsp;&nbsp);<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id integer NOT NULL,<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name text COLLATE pg_catalog."default",<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;designation text COLLATE pg_catalog."default",<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONSTRAINT employee_pkey PRIMARY KEY (id)<br/>
+&nbsp;&nbsp;&nbsp;)<br/>
 &nbsp;&nbsp;**INSERT**<br/>
 &nbsp;&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (1, 'PrasadVarma', 'SSE');<br/>
 &nbsp;&nbsp;&nbsp;INSERT INTO public.employee(id, name, designation) 	VALUES (2, 'Srikanth', 'Solution Architect');<br/>
